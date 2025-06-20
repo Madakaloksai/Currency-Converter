@@ -1,78 +1,52 @@
 
-import { Cloud, Facebook, Twitter, Instagram, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { DollarSign, Github, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-white border-t mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
-          <div>
+          <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Cloud className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">WeatherMart</span>
+              <DollarSign className="h-8 w-8 text-blue-600" />
+              <span className="text-xl font-bold text-gray-900">CurrencyConverter</span>
             </div>
-            <p className="text-gray-400 mb-4">
-              Your trusted source for weather-appropriate gear and seasonal essentials.
+            <p className="text-gray-600 mb-4">
+              Your trusted companion for currency conversion with real-time exchange rates 
+              and comprehensive country information.
             </p>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="sm" className="p-2">
-                <Facebook className="h-4 w-4" />
-              </Button>
-              <Button variant="ghost" size="sm" className="p-2">
-                <Twitter className="h-4 w-4" />
-              </Button>
-              <Button variant="ghost" size="sm" className="p-2">
-                <Instagram className="h-4 w-4" />
-              </Button>
+              <Twitter className="h-5 w-5 text-gray-400 hover:text-blue-500 cursor-pointer" />
+              <Github className="h-5 w-5 text-gray-400 hover:text-gray-600 cursor-pointer" />
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Shipping Info</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Returns</a></li>
+            <h3 className="font-semibold text-gray-900 mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-600 hover:text-blue-600">Currency Converter</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600">Exchange Rates</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600">Country List</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600">API Documentation</a></li>
             </ul>
           </div>
 
-          {/* Categories */}
+          {/* Support */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Categories</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">Sunny Weather</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Rainy Days</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Winter Gear</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Wind Protection</a></li>
+            <h3 className="font-semibold text-gray-900 mb-4">Support</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-gray-600 hover:text-blue-600">Help Center</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600">Contact Us</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-blue-600">Terms of Service</a></li>
             </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Weather Updates</h3>
-            <p className="text-gray-400 mb-4">
-              Get weather-based product recommendations and exclusive offers.
-            </p>
-            <div className="flex space-x-2">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="bg-gray-800 border-gray-700 text-white placeholder-gray-400"
-              />
-              <Button className="bg-blue-600 hover:bg-blue-700">
-                <Mail className="h-4 w-4" />
-              </Button>
-            </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 WeatherMart. All rights reserved.</p>
+        <div className="border-t mt-8 pt-8 text-center text-gray-600">
+          <p>&copy; 2024 CurrencyConverter. All rights reserved.</p>
         </div>
       </div>
     </footer>
